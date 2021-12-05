@@ -31,7 +31,7 @@ import matplotlib
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import matplotlib.pyplot as plt
 
-df = pd.read_pickle("/home/cantos/Dropbox/School/My Papers in Progress/Crowdsourced Delivery/flat-comment-df.pkl")
+df = pd.read_pickle("~/Dropbox/School/My Papers in Progress/Crowdsourced Delivery/flat-comment-df.pkl")
 df=df.drop_duplicates()
 ```
 
@@ -39,7 +39,7 @@ We might need to save the file as a TSV for sharing with others. The TSV preserv
 
 ```python
 
-#writefile = df.to_csv('/home/cantos/Dropbox/School/My Papers in Progress/Crowdsourced Delivery/flat-comment.tsv', sep='\t')
+#writefile = df.to_csv('~/Dropbox/School/My Papers in Progress/Crowdsourced Delivery/flat-comment.tsv', sep='\t')
 ```
 
 
