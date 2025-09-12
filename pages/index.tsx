@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'research', 'publications', 'contact'];
+      const sections = ['home', 'about', 'research', 'awards', 'experience', 'publications', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -65,6 +65,8 @@ export default function Home() {
                   { id: 'home', label: 'Home' },
                   { id: 'about', label: 'About' },
                   { id: 'research', label: 'Research' },
+                  { id: 'awards', label: 'Awards' },
+                  { id: 'experience', label: 'Experience' },
                   { id: 'publications', label: 'Publications' },
                   { id: 'contact', label: 'Contact' }
                 ].map((item) => (
@@ -103,6 +105,8 @@ export default function Home() {
                 { id: 'home', label: 'Home' },
                 { id: 'about', label: 'About' },
                 { id: 'research', label: 'Research' },
+                { id: 'awards', label: 'Awards' },
+                { id: 'experience', label: 'Experience' },
                 { id: 'publications', label: 'Publications' },
                 { id: 'contact', label: 'Contact' }
               ].map((item) => (
@@ -170,7 +174,7 @@ export default function Home() {
                 <div className="mb-8 lg:hidden">
                   <div className="relative w-48 h-48 mx-auto">
                     <img
-                      src="https://media.licdn.com/dms/image/v2/C4E03AQHIqyFbrsQ85Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517701026656?e=1756339200&v=beta&t=ZPPfbCFyk_vN5CG9LrVXMbi5qmxypItFcSVpHK0BWoo"
+                      src="/headshot.jpg"
                       alt="Sunny Hasija, PhD"
                       className="w-full h-full object-cover rounded-full shadow-lg border-4 border-primary-200"
                     />
@@ -181,7 +185,7 @@ export default function Home() {
                 </h2>
                 <div className="prose prose-lg text-gray-600 space-y-4">
                   <p>
-                    I recently completed my PhD in Logistics at The Ohio State University's Fisher College of Business, 
+                    I defended my PhD in Logistics at The Ohio State University's Fisher College of Business (expected December 2025), 
                     where I specialized in the intersection of artificial intelligence and supply chain management.
                   </p>
                   <p>
@@ -229,7 +233,7 @@ export default function Home() {
                 <div className="hidden lg:block mb-8">
                   <div className="relative w-64 h-64 mx-auto">
                     <img
-                      src="https://media.licdn.com/dms/image/v2/C4E03AQHIqyFbrsQ85Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517701026656?e=1756339200&v=beta&t=ZPPfbCFyk_vN5CG9LrVXMbi5qmxypItFcSVpHK0BWoo"
+                      src="/headshot.jpg"
                       alt="Sunny Hasija, PhD"
                       className="w-full h-full object-cover rounded-full shadow-xl border-4 border-primary-200 hover:scale-105 transition-transform duration-300"
                     />
@@ -244,7 +248,7 @@ export default function Home() {
                       <div>
                         <h4 className="font-semibold">PhD in Logistics</h4>
                         <p className="text-primary-100">The Ohio State University</p>
-                        <p className="text-sm text-primary-200">Fisher College of Business</p>
+                        <p className="text-sm text-primary-200">Defended 2025, Expected December 2025</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
@@ -320,6 +324,233 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Awards & Recognition Section */}
+        <section id="awards" className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Awards & Recognition
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Recognition for academic excellence and research contributions in supply chain management and AI.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {/* Fisher AI Conference Award */}
+              <div className="bg-gradient-to-br from-primary-50 to-accent-50 rounded-lg p-8 border border-primary-200 hover:shadow-lg transition-shadow">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Best Presentation Competition Finalist
+                    </h3>
+                    <p className="text-primary-600 font-semibold mb-1">
+                      Fisher AI in Business Conference
+                    </p>
+                    <p className="text-gray-600 mb-3">
+                      Doctoral Students Competition • October 2025
+                    </p>
+                  </div>
+                  <div className="ml-4">
+                    <span className="inline-flex items-center px-3 py-1 bg-primary-600 text-white rounded-full text-sm font-medium">
+                      Finalist
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Selected as one of five finalists for the Best Presentation Competition (Doctoral Students) 
+                  after a careful review by a panel of judges in a very competitive pool. Presentation scheduled 
+                  for October 2, 2025 at 1:00 PM.
+                </p>
+                <div className="mt-4">
+                  <span className="px-3 py-1 bg-accent-100 text-accent-700 rounded-full text-sm font-medium">
+                    Current Achievement
+                  </span>
+                </div>
+              </div>
+
+              {/* Bowersox Doctoral Symposium Scholarship */}
+              <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition-shadow">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Bowersox Doctoral Symposium Scholarship
+                    </h3>
+                    <p className="text-primary-600 font-semibold mb-1">
+                      Council of Supply Chain Management Professionals
+                    </p>
+                    <p className="text-gray-600 mb-3">
+                      Academic Research Symposium • 2018
+                    </p>
+                  </div>
+                  <div className="ml-4">
+                    <span className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+                      Scholarship
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Awarded scholarship to participate in the prestigious Bowersox Doctoral Symposium, 
+                  recognizing outstanding doctoral research potential in supply chain management and logistics.
+                </p>
+                <div className="mt-4">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                    Doctoral Excellence
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Professional Experience Section */}
+        <section id="experience" className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Professional Experience
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Academic teaching and industry experience spanning research, operations, and technology.
+              </p>
+            </div>
+            
+            <div className="space-y-8">
+              {/* Academic Experience */}
+              <div className="bg-white rounded-lg p-8 shadow-md border border-gray-200">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      Academic Experience
+                    </h3>
+                  </div>
+                  <div className="ml-4">
+                    <span className="inline-flex items-center px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">
+                      Teaching
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="border-l-4 border-primary-500 pl-6">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                      Instructor of Record
+                    </h4>
+                    <p className="text-primary-600 font-medium mb-2">
+                      The Ohio State University • Spring 2019, Spring 2020
+                    </p>
+                    <p className="text-gray-700 mb-3">
+                      BUSML 4383: Supply Chain Management
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      Senior level undergraduate course focused on distinction between logistics and supply chain management; 
+                      cross-functional integration of key business processes within the firm and across network of firms. 
+                      Introduced concepts salient to the Global Supply Chain Forum model.
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                        4.2/5 Rating (Spring 2019, 92 students)
+                      </span>
+                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                        3.8/5 Rating (Spring 2020, 80 students)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Industry Experience */}
+              <div className="bg-white rounded-lg p-8 shadow-md border border-gray-200">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      Industry Experience
+                    </h3>
+                  </div>
+                  <div className="ml-4">
+                    <span className="inline-flex items-center px-3 py-1 bg-accent-100 text-accent-700 rounded-full text-sm font-medium">
+                      Professional
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="border-l-4 border-accent-500 pl-6">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                      Research Manager
+                    </h4>
+                    <p className="text-accent-600 font-medium mb-2">
+                      PATH Inc., Columbus, OH • January 2017 - August 2017
+                    </p>
+                    <p className="text-gray-600">
+                      Statistical analysis of qualitative and quantitative marketing research; context and text mining 
+                      techniques to generate insights from qualitative data.
+                    </p>
+                  </div>
+                  
+                  <div className="border-l-4 border-blue-500 pl-6">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                      Student Security Operations Specialist
+                    </h4>
+                    <p className="text-blue-600 font-medium mb-2">
+                      Office of Chief Information Officer, OSU • October 2014 - December 2016
+                    </p>
+                    <p className="text-gray-600">
+                      Statistical analysis and dashboard development for IT security operations; built sentiment analysis 
+                      engine for real-time threat detection using machine learning and natural language processing.
+                    </p>
+                  </div>
+                  
+                  <div className="border-l-4 border-purple-500 pl-6">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                      Web Marketing and IT Manager
+                    </h4>
+                    <p className="text-purple-600 font-medium mb-2">
+                      LS&S, LLC, Buffalo, NY • August 2009 - July 2014
+                    </p>
+                    <p className="text-gray-600">
+                      Managed IT infrastructure and web marketing activities; evaluated and deployed new ERP software; 
+                      streamlined warehouse operations achieving significant annual cost savings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Professional Service */}
+              <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-lg p-8">
+                <div className="flex items-center mb-6">
+                  <BookOpen className="h-6 w-6 text-blue-600 mr-3" />
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    Professional Service
+                  </h3>
+                </div>
+                
+                <div className="grid md:grid-cols-1 gap-4">
+                  <div className="bg-white rounded-lg p-4 border border-gray-200">
+                    <h4 className="font-semibold text-gray-900 mb-2">
+                      Ad-Hoc Reviewer
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-3">
+                      December 2019 - Present
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">
+                        CSCMP ARS 2020, 2021
+                      </span>
+                      <span className="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-medium">
+                        DSI 2020, 2021
+                      </span>
+                      <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">
+                        Decision Sciences Journal
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Publications Section */}
         <section id="publications" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -391,6 +622,117 @@ export default function Home() {
                     <BookOpen className="h-4 w-4 mr-2" />
                     Google Scholar Profile
                   </a>
+                </div>
+              </div>
+
+              {/* Conference Abstracts */}
+              <div className="bg-gradient-to-r from-primary-50 to-accent-50 rounded-lg p-6">
+                <div className="flex items-center mb-4">
+                  <BookOpen className="h-6 w-6 text-primary-600 mr-3" />
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Conference Abstracts
+                  </h3>
+                </div>
+                <p className="text-gray-600 mb-6">
+                  Research presentations at leading supply chain and decision science conferences.
+                </p>
+                
+                <div className="grid gap-4">
+                  {/* 2025 Conference */}
+                  <div className="bg-white rounded-lg p-4 border border-gray-200">
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Algorithm Aversion in Supplier Selection
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-2">
+                      <strong>Abhinav Hasija</strong>
+                    </p>
+                    <p className="text-sm text-primary-600 font-medium mb-2">
+                      <em>Council of Supply Chain Management Professionals - Academic Research Symposium 2025</em>
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-2 py-1 bg-primary-100 text-primary-700 rounded text-xs">
+                        Algorithm Aversion
+                      </span>
+                      <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">
+                        Supplier Selection
+                      </span>
+                      <span className="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">
+                        Supply Chain Management
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* 2021 Conference */}
+                  <div className="bg-white rounded-lg p-4 border border-gray-200">
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Algorithm Aversion under Algorithmic Management
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-2">
+                      <strong>Abhinav Hasija</strong> and Terry Esper
+                    </p>
+                    <p className="text-sm text-blue-600 font-medium mb-2">
+                      <em>Proceedings of Decision Science Institute Conference 2021</em>
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs">
+                        Algorithmic Management
+                      </span>
+                      <span className="px-2 py-1 bg-orange-100 text-orange-700 rounded text-xs">
+                        Algorithm Aversion
+                      </span>
+                      <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">
+                        Decision Science
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* 2020 Conference */}
+                  <div className="bg-white rounded-lg p-4 border border-gray-200">
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Exploring Algorithm Aversion in AI Use for SCM Decisions
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-2">
+                      <strong>Abhinav Hasija</strong> and Terry Esper
+                    </p>
+                    <p className="text-sm text-primary-600 font-medium mb-2">
+                      <em>Proceedings of CSCMP - Academic Research Symposium 2020</em>
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">
+                        Artificial Intelligence
+                      </span>
+                      <span className="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">
+                        Supply Chain Decisions
+                      </span>
+                      <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs">
+                        Algorithm Aversion
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* 2020 DSI Conference */}
+                  <div className="bg-white rounded-lg p-4 border border-gray-200">
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Role of Cognitive Reflection In Algorithm Aversion for SCM Decisions
+                    </h4>
+                    <p className="text-sm text-gray-600 mb-2">
+                      <strong>Abhinav Hasija</strong> and Terry Esper
+                    </p>
+                    <p className="text-sm text-blue-600 font-medium mb-2">
+                      <em>Proceedings of Decision Science Institute Conference 2020</em>
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-2 py-1 bg-pink-100 text-pink-700 rounded text-xs">
+                        Cognitive Reflection
+                      </span>
+                      <span className="px-2 py-1 bg-orange-100 text-orange-700 rounded text-xs">
+                        Algorithm Aversion
+                      </span>
+                      <span className="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">
+                        Supply Chain Management
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
