@@ -342,13 +342,13 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Best Presentation Competition Finalist
+                      Best PhD Student Paper Award Finalist
                     </h3>
                     <p className="text-primary-600 font-semibold mb-1">
-                      Fisher AI in Business Conference
+                      AI in Business Conference
                     </p>
                     <p className="text-gray-600 mb-3">
-                      Doctoral Students Competition • October 2025
+                      The Ohio State University, Columbus, OH • October 2025
                     </p>
                   </div>
                   <div className="ml-4">
@@ -358,13 +358,12 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Selected as one of five finalists for the Best Presentation Competition (Doctoral Students) 
-                  after a careful review by a panel of judges in a very competitive pool. Presentation scheduled 
-                  for October 2, 2025 at 1:00 PM.
+                  Paper "Algorithm Aversion in Supplier Selection" selected as a finalist for the Best PhD Student
+                  Paper Award at the AI in Business Conference at The Ohio State University.
                 </p>
                 <div className="mt-4">
                   <span className="px-3 py-1 bg-accent-100 text-accent-700 rounded-full text-sm font-medium">
-                    Current Achievement
+                    2025
                   </span>
                 </div>
               </div>
@@ -564,6 +563,58 @@ export default function Home() {
             </div>
             
             <div className="space-y-6">
+              {/* SSRN Working Paper */}
+              <div className="bg-gradient-to-br from-accent-50 to-primary-50 rounded-lg p-6 shadow-md border-2 border-accent-300 hover:shadow-lg transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      When Anchors Sink Suppliers: Role-Based Asymmetry Bias in AI-Automated Buyer-Supplier Negotiations
+                    </h3>
+                    <p className="text-primary-600 mb-2 font-medium">
+                      <strong>Sunny Hasija</strong>, Vincent E. Castillo
+                    </p>
+                    <p className="text-gray-500 mb-3">
+                      <em>SSRN</em>, 2025
+                    </p>
+                  </div>
+                  <div className="ml-4">
+                    <span className="inline-flex items-center px-3 py-1 bg-accent-600 text-white rounded-full text-sm font-medium">
+                      New
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  This research examines how AI automation in buyer-supplier negotiations creates asymmetric biases
+                  that systematically disadvantage suppliers, revealing important implications for fairness and trust
+                  in AI-mediated business relationships.
+                </p>
+                <div className="flex flex-wrap gap-3 mb-4">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                    AI Automation
+                  </span>
+                  <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                    Buyer-Supplier Relations
+                  </span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+                    Negotiation
+                  </span>
+                  <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
+                    Behavioral Research
+                  </span>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5522018"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 bg-accent-600 text-white rounded-md hover:bg-accent-700 transition-colors font-medium"
+                  >
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    View on SSRN
+                  </a>
+                </div>
+              </div>
+
               {/* First Author Publication */}
               <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
                 <div className="flex items-start justify-between mb-3">
@@ -585,8 +636,8 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4 leading-relaxed">
-                  This study explores organizational factors that influence AI technology acceptance in supply chain management. 
-                  Using thematic analysis of vendor marketing materials and interviews with organizational leaders, we investigate 
+                  This study explores organizational factors that influence AI technology acceptance in supply chain management.
+                  Using thematic analysis of vendor marketing materials and interviews with organizational leaders, we investigate
                   the gap between AI's potential benefits and its actual acceptance and use in supply chain contexts.
                 </p>
                 <div className="flex flex-wrap gap-3 mb-4">
@@ -604,8 +655,8 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <a 
-                    href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jbl.12301" 
+                  <a
+                    href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jbl.12301"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors font-medium"
@@ -613,8 +664,8 @@ export default function Home() {
                     <ExternalLink className="h-4 w-4 mr-2" />
                     View Publication
                   </a>
-                  <a 
-                    href="https://scholar.google.com/citations?user=Vam6NJgAAAAJ&hl=en&oi=ao" 
+                  <a
+                    href="https://scholar.google.com/citations?user=Vam6NJgAAAAJ&hl=en&oi=ao"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors font-medium"
