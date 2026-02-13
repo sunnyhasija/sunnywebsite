@@ -470,7 +470,7 @@ export default function Home() {
                 },
                 {
                   label: 'LLM Applications',
-                  text: 'SCM-Arena: the first standardized benchmark for evaluating LLMs on multi-agent supply chain coordination. AI negotiation capabilities studied through 2,840+ negotiations across 8 LLM models.',
+                  text: 'SCM-Arena (scm-arena.com): a behavioral benchmark evaluating how LLMs make decisions in multi-tier supply chain environments. 144 conditions per model, 5 replications, 52 rounds per episode, over 11 million total decisions. Measures cost ratio, bullwhip effect, entropy, and behavioral complexity across open-weight and frontier models.',
                 },
                 {
                   label: 'Behavioral Operations',
